@@ -1,13 +1,13 @@
 <?php
 
 /*
- * @author      Henrique Rodrigues <henrique@hostnet.com.br>
+ * @author      Henrique Rodrigues <henrique@am.com.br>
  *
- * @link        https://www.hostnet.com.br
+ * @link        https://www.am.com.br
  *
  */
 
-namespace MauticPlugin\HostnetQueueProgressBundle\Controller;
+namespace MauticPlugin\AMQueueProgressBundle\Controller;
 
 use Mautic\CoreBundle\Controller\CommonController;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,10 +23,10 @@ class QueueProgressController extends CommonController
         ));
 
         return $this->delegateView([
-            'contentTemplate' => 'HostnetQueueProgressBundle:QueueProgressView:form.html.php',
-            'viewParameters' => [
-                'emailQuantity' => $emailQuantity
-            ]
+            'contentTemplate' => 'AMQueueProgressBundle:QueueProgressView:form.html.php',
+            'viewParameters'  => [
+                'emailQuantity' => $emailQuantity,
+            ],
         ]);
     }
 }
